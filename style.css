@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0f13;
+    color: white;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 6%;
+
+    background: rgba(10, 15, 20, 0.95);
+
+    z-index: 1000;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #52ff00;
+
+    margin-right: 45px;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #d5d5d5;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #52ff00;
+}
+
+nav a.active {
+    color: white;
+    border-bottom: 2px solid #52ff00;
+    padding-bottom: 10px;
+}
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 10, 15, 0.35),
+            rgba(5, 10, 15, 0.95)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+
+    text-align: center;
+
+    padding: 120px 30px 50px;
+}
+h1 {
+    font-size: 64px;
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-top: 40px;
+}
+h1 span {
+    display: block;
+
+    color: #b8ff3d;
+}
+.description {
+    max-width: 750px;
+
+    margin: 25px auto;
+
+    color: #c5c5c5;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.buttons button {
+    padding: 15px 25px;
+
+    background: rgba(20, 25, 30, 0.8);
+
+    color: white;
+
+    border: 1px solid #444;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: #52ff00;
+
+    color: black;
+
+    transform: translateY(-3px);
+}
+.announcement {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    padding: 18px 25px;
+
+    background: #52ff00;
+
+    color: black;
+
+    border-radius: 8px;
+
+    text-align: left;
+}
+.announcement strong {
+    font-size: 24px;
+}
+
+.announcement p {
+    margin-top: 5px;
+
+    font-size: 13px;
+}
+
+.announcement button {
+    margin-left: auto;
+
+    padding: 12px 18px;
+
+    background: black;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
